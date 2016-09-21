@@ -3,11 +3,11 @@
 ##### Requirements & Installation:
 
  * Mysql
- * Python 2.7 or higher
+ * Python 2.7 or higher and python-dev too. Run `sudo apt-get install python-dev`
  * Change the mysql user and password in `settings.py`
 
 ##### How to Run:
- * Run `pip install -r requirements.txt`, preferably in a virtual environment.
+ * Run `pip install -r requirements.txt`, preferably in a virtual environment. If you get any mysql error, run this `sudo apt-get install libmysqlclient-dev`
  * Create database `signzy` and run `python manage.py migrate`
  * Run `python manage.py insert_in_db`
  * Run `python manage.py runserver`
